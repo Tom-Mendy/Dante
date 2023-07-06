@@ -7,6 +7,10 @@
 
 all: 	make_lib compil_all_binaries
 
+docker: fclean make_lib $(OBJ)
+	make -C generator/ docker
+	make -C solver/ docker
+
 compil_all_binaries:
 	make -C generator/
 	make -C solver/

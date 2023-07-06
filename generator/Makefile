@@ -40,6 +40,9 @@ all: 	make_lib $(NAME)
 $(NAME):	$(OBJ)
 	gcc -o $(NAME) $(OBJ) $(MY_LIB)
 
+docker: make_lib $(OBJ)
+	gcc -o $(NAME) -static $(OBJ) $(MY_LIB) $(CPPFLAGS)
+
 make_lib:
 	make -C ../lib/my
 
