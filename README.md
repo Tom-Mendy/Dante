@@ -11,6 +11,10 @@
 
 ***
 The main objective of this project is to create a maze generator and a maze solver
+
+The maze generator use the [hunt and kill algorithm](https://weblog.jamisbuck.org/2011/1/24/maze-generation-hunt-and-kill-algorithm)
+
+The maze solver use the [A * algorithm](https://www.geeksforgeeks.org/a-search-algorithm/)
 ***
 
 ## Technologies
